@@ -1,0 +1,47 @@
+# CLASS EXERCISES – Functional Dependency
+
+1. Consider the table below:
+   STAFF_MEETING(EmployeeName, ProjectName, Date)
+
+The rows of this table record the fact that an employee
+from a particular project attended a meeting on
+the given date.
+
+Note: Assume that a project meets at most once per day.
+Also, assume that only one employee represents a given
+project, but that employees can be assigned to multiple projects.
+
+Question: Complete the blanks below to complete the two
+functional dependencies for the table above
+
+Hint: Fill out the table with a few rows
+of sample data to aid your understanding of the problem.
+
+a. ProjectName --> EmployeeName
+b. (ProjectName, Date) --> EmployeeName
+
+===================================================================
+
+2. Consider the table below:
+   STUDENT(StudentNumber, StudentName, Dorm, RoomType,
+   DormCost, Club, ClubCost, Sibling, Nickname)
+
+Note: Assume that students pay different dorm costs, depending
+on the type of room they have, but that all members of
+a club pay the same cost. Assume that students can have multiple
+nicknames.
+
+Hint: Fill out the table with a few rows
+of sample data to aid your understanding of the problem.
+
+a. StudentNumber --> StudentName
+b. StudentNumber -->  Dorm
+c. StudentNumber -->  RoomType
+d. RoomType -->  DormCost
+e. Club -->  ClubCost
+
+STUDENT (studentnumber PK, studentname, dorm FK, club FK)
+DORM (dorm PK, roomtype FK)
+ROOMTYPE (roomtype PK, dormcost)
+SIBLINGS (studentnumber PK FK, sibling PK)
+NICKANMES (studentnumber PK FK, nickname PK)

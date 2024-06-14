@@ -1,0 +1,48 @@
+HOMEWORK EXERCISE – Functional Dependency
+=========================================
+
+A. Consider the table below:
+   ORDER(product_id, product_name, customer_id, customer_name,
+         order_date, item_price, amount, VAT, gross_total, net_total)
+
+ASSUMPTIONS:
+
+--> The sales tax (VAT) value can vary from product to product (e.g. 8%
+    for books, 16% for alcohol).
+
+--> The gross total is the net total plus the sales tax (VAT).
+
+--> Customer orders on the same day are combined. We only have one order
+    per customer and per day
+
+--> Properties do not change over time -- everything is write-once (once
+    we record the data, we do not go back and update it)
+
+ 
+1. Determine all the functional dependencies for the ORDER table.
+
+product_id --> product_name, item_price, VAT
+product_name --> product_id, item_price, VAT
+customer_id --> customer_name
+customer_name --> customer_id
+product_id, customer_id, order_date --> amount
+net_total, VAT --> gross_total
+item_price, amount --> net_total
+
+1. product_id --> product_name
+2. product_id --> item_price
+3. product_id --> VAT
+4. product_name --> item_price 
+5. customer_id --> customer_name
+6. product_id, customer_id, order_data --> amount
+7. item_price, amount --> net_total
+8. net_total, VAT --> gross_total
+9. product_name --> product_id 
+10. customer_name --> customer_id
+====================================
+OPTIONAL
+====================================
+11. gross_total, VAT --> net_total
+12. gross_total, net_total --> amount
+13. net_total, amount --> item_price
+14. net_total, item_price --> amount

@@ -1,0 +1,24 @@
+Determine if the table below is Normalized. If it is not, then Normalize it up
+to BCNF.
+
+			TABLE_PURCHASE_DETAIL
+			
+CustomerID	StoreID	       Purchase Location
+--------------------------------------------
+1			            1				Los Angeles
+1			            3				San Francisco
+2			            1				Los Angeles
+3		              2				New York
+4			            3				San Francisco
+
+Assumptions
+CustomerID is a FK to a Customer table.
+
+Functional Dependencies
+StoreID --> Purchase Location
+
+Not normalized because Determinant StoreID is not a candidate key. Normalize to BCNF.
+Added Timestamp to TABLE_PURCHASE_DETAIL to make table unique
+
+TABLE_PURCHASE_DETAIL (CustomerID PK FK, StoreID PK FK, Timestamp PK)
+TABLE_PURCHASE_STORE (StoreID PK, Purchase Location)

@@ -1,0 +1,18 @@
+Quiz #1
+
+0. Quizzes are individual/pair work, so everyone must submit their own.
+1. This quiz is due by... (lecturer to provide details) 
+2. You are free to discuss the problems with your partner, and
+   the code you write must be your own.
+   ----------------------------------------------------------
+3. Create screenshots that show:
+   a. You logged into the preschool database
+   b. The results of each query that you are required to run. 
+      I should see the query before you execute it, and I should 
+      see the results of executing the query.
+   c. Name you screenshots according to the exercise number they answer
+   -------------------------------------------------------------
+4. Create a directory named q2_<yourname> for example q2_dalwin_lewis
+5. Add the students.sql, students.txt, and your screenshots to the q2_<yourname> directory
+6. Zip the q2_<yourname> directory and upload at the link provided.
+6. If you have any questions, let me know.

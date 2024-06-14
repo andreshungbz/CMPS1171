@@ -1,0 +1,13 @@
+Determine if the table below is Normalized. If it is not, then Normalize it up
+to BCNF.
+
+CLIENT_INTERVIEW(ClientNo, InterviewDate, InterviewTime, StaffNo, RoomNo)
+
+Assumptions
+ClientNo, StaffNo, RoomNo are FKs to respective tables.
+Staff can interview in any available room.
+
+Functional Dependencies
+None
+
+Table is normalized.

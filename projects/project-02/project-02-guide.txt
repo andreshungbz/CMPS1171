@@ -1,0 +1,43 @@
+Project #2
+
+IMPORTANT: The actual work submission is worth 70 points.
+           The video presentation is worth 30 points.
+           You must submit both parts to be eligible to receive the maximum points (100).
+
+NOTES 1. The name of your video should be project2. It should be in an 'mp4' format.
+      2. At the beginnig of the video, you should turn on video and introduce yourselves. 
+         You can then turn off the video and proceed with your presentation.
+      3. Upload the video to your UB student email Google drive and send me the link. 
+         Ensure that the right permission is set on the link
+         (anyone with the link can see the video)
+      4. All team members should present during the presentation since each member will 
+         get a grade for presentation.
+      5. Use English during your presentation. (no Creole).
+      6. The video shoud be no more than 20 minutes long.
+      7. All your submisisons should include the team members at the top of the pages
+         as a comment, so that I know who to assign the grades to.
+
+--------------------------------------------------------------------------------------------
+
+0. Projects are done as a team, so you should work with a partner.
+
+1. This project is due by (lecturer to indicate).
+
+2. Your video should proceed as follows:
+   a. Your logging into the project database (project=>)
+   b. Your opening your project_tables_data.sql file in VSCode and explaining 
+      the tables and the data being inserted into the tables.
+   c. Your opening your project_queries.sql file in VSCode and explaining 
+      the queries.
+   d. Your wrapping up and discussing the technical challenges your faced and 
+      how you overcame them.
+   
+3. Create a directory named project.
+
+4. Add the project_tables_data.sql and project_queries.sql files to the project directory.
+
+5. Create an empty text file named video (video.txt). In this file put the link to your video.
+
+6. Add the video.txt file to the project directory.
+
+7. Zip the project directory and upload at the link provided.

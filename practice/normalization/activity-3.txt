@@ -1,0 +1,26 @@
+Determine if the table below is Normalized. If it is not, then Normalize it up
+to BCNF.
+
+STUDENT_GRADE(StudentNo, StudentName, Major, CourseNo, CourseName,
+              InstructorNo, InstructorName, InstructorLocation, Grade)
+			
+Assumptions
+Student can have multiple majors.
+Student can take multiple courses.
+Instructor can teach multiple courses nad has one location.
+
+Functional Dependencies
+StudentNo --> StudentName
+CourseNo --> CourseName
+InstructorNo --> InstructorName, InstructorLocation
+StudentNo, CourseNo, InstructorNo --> Grade
+
+Not normalized as every determinant is not a candidate key.
+Mutlivalued dependencies exist so normalize to 4NF.
+For STUDENT_GRADE, added semester field to make rows unique.
+
+STUDENT (StudentNo PK, StudentName)
+STUDENT_MAJOR (StudentNo PK FK, Major PK)
+COURSE (CourseNo PK, CourseName)
+INSTRUCTOR (InstructorNo PK, InstructorName, InstructorLocation)
+STUDENT_GRADE (StudentNo PK FK, CourseNo PK FK, InstructorNo PK FK, Semester PK, Grade)

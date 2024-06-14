@@ -1,0 +1,23 @@
+Quiz #2
+
+0. Quizzes are individual/pair work, so everyone must submit their own.
+
+1. This quiz is due by... (lecturer to specify)
+
+2. You are free to discuss the problems with your partner, but
+   the code you write must be your own.
+
+NOTE: Place all the screenshots in a file and convert it to PDF.
+
+3. Create screenshots that show:
+   a. The databases you create.
+   b. The tables created.
+   c. All the rows in the lecturer table.
+   d. All the rows in the course table.
+   e. The results of all the queries.
+   
+4. Create a directory named q2_name1_name2.
+
+5. Add the PDF file containing the screenshots and the solution_a.sql and solution_b.sql files to q2_name1_name2.
+
+6. Zip the q2_name1_name2 directory and upload at the link provided.

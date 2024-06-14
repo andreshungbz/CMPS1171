@@ -1,0 +1,21 @@
+Determine if the table below is Normalized. If it is not, then Normalize it up
+to BCNF.
+
+			TABLE_PRODUCT
+			
+ProductID	    Color	       Price
+---------------------------------
+1			      red,green		    15.99
+2			      yellow			    23.99
+3			      green			      17.50
+4			      yellow,blue		  9.99
+5			      red				      29.99
+
+Functional Dependencies
+ProductID --> Price
+
+Not normalized because of multiple values in Color.
+Can separate into additional records but must go into 4NF
+
+TABLE_PRODUCT (ProductID PK, Price)
+TABLE_PRODUCT_COLORS (ProductID PK FK, Color PK)

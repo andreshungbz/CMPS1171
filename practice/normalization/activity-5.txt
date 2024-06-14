@@ -1,0 +1,20 @@
+Determine if the table below is Normalized. If it is not, then Normalize it up
+to BCNF.
+
+DENTAL_INFO(staffNo, dentistName, patientNo, patientName, 
+                 appointmentDate, appointmentTime, surgeryNo)
+
+Assumptions
+DENTAL_INFO stores information about surgery instances.
+
+Functional Dependencies
+staffNo --> dentistName
+patientNo --> patientName
+surgeryNo --> staffNo, patientNo, appointmentDate, appointmentTime
+
+Not normalized. Normalize to BCNF
+
+STAFF (staffNo PK, dentistName)
+PATIENT (patientNo PK, patientName)
+DENTAL_INFO (surgeryNo PK, staffNo PK FK, patientNo PK FK,
+ appointmentDate PK, appointmentTime PK)

@@ -1,0 +1,16 @@
+INSTRUCTIONS: Complete the following tasks in a file named animals.sql
+  
+1. Create a table named animals in the zoo database
+
+2. Add a 'animal_id' column of type text. This field
+cannot be left empty.
+
+3. Add a 'animal_name' column of type text. This field
+cannot be left empty.
+
+4. Add a 'created_at' timestamp column.
+
+5. Insert five rows of data into the animals table.
+
+
+
